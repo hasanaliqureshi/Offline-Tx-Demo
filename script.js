@@ -9,7 +9,7 @@ function login(){
       var settings = {
           "async": true,
           "crossDomain": true,
-          "url": "http://206.189.47.11//api/login",
+          "url": "http://206.189.47.11/api/login",
           "method": "POST",
           "headers": {
             "Content-Type": "application/json",
@@ -41,7 +41,7 @@ function generateAddress(){
   var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "http://206.189.47.11//api/getnewaddress",
+      "url": "http://206.189.47.11/api/getnewaddress",
       "method": "POST",
       "headers": {
         "X-Access-Token": sessionStorage.token,
@@ -63,7 +63,7 @@ function generateTx(){
   var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "http://206.189.47.11//api/createrawtx",
+      "url": "http://206.189.47.11/api/createrawtx",
       "method": "POST",
       "headers": {
         "X-Access-Token": sessionStorage.token,
@@ -86,7 +86,7 @@ function broadcastTx(hash){
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://206.189.47.11//api/broadcasttx",
+  "url": "http://206.189.47.11/api/broadcasttx",
   "method": "POST",
   "headers": {
     "X-Access-Token": sessionStorage.token,
