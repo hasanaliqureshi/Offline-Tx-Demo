@@ -103,6 +103,8 @@ $.ajax(settings).done(function (response) {
     let link = "https://kmdexplorer.io/tx/"+response["txid"];
     $(".success_tx a").attr("href", link);
     $("#myModal").modal();
+    $("#raddress").val('');
+    $("#ramount").val('');
   }else if (response.sucesss == false){
     alert(response);
   }
